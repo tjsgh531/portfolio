@@ -1,0 +1,239 @@
+
+body,html{
+    position: relative;
+    width: 100vw;
+}
+/*--------------------------------------header CSS-------------------------*/
+header{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+    width: 100vw;
+    height: 10rem;
+
+    box-sizing: border-box;
+
+    background-color: white;
+
+}
+.logo{
+    position: absolute;
+    bottom: 1rem; left: 2rem;
+}
+.title{
+    font-size: 5rem;
+    font-family: 'Black Han Sans', sans-serif;
+    letter-spacing: 10px;
+    margin-bottom: 0.5rem;
+}
+.subtitle{
+    width: 40%; min-width: fit-content;
+    padding-left: 5px;
+    padding-right: 5rem;
+
+    background-color: black;
+
+    font-size: 1.5rem;
+    font-family: 'Nanum Pen Script', cursive;
+    color: white;
+}
+
+.lang_btn{
+    position: absolute;
+    right: 4rem; bottom: 1rem;
+
+    height: fit-content;
+
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+
+    background-color: black;
+    
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: white;
+
+    cursor: pointer;
+}
+/*--------------------------------------main CSS--------------------------*/
+main{
+    position: relative;
+    top: 7rem;
+    width: 100vw;
+
+    margin-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    
+    box-sizing: border-box;
+}
+.pj_int{
+    min-height: 100vh;
+    min-width: 960px;
+
+    margin: 0 auto;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: row;
+}
+.pj_int_text{
+    position: relative;
+    
+    width: 13rem;
+}
+.main_text{
+    position: sticky;
+    top:20rem;
+
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2.5rem;
+    white-space: nowrap;
+}
+.sub_text{
+    position: absolute;
+    bottom: -5rem;
+
+    font-size: 1.2rem;
+    font-family: 'Nanum Pen Script', cursive;
+    font-weight: normal;
+    white-space: nowrap;
+}
+.sub_text:hover{
+    background-color:#f59000;
+}
+.pj_int_content{
+    position: relative;
+
+    border: 1px solid #ccc;
+
+    flex-grow: 1;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+.project_item{
+    width: 90%; 
+    height: 20rem;
+    margin: 2rem;
+
+    border: 3px solid #444;
+
+    overflow: hidden;
+}
+.item_img{
+    position: absolute;
+    top: 50%; left: 50%; z-index: 1;
+    transform: translate(-50%,-50%) scaleY(0.5);
+
+    transition: transform 0.3s ease-in-out;
+}
+.item_title{
+    position: absolute;
+    left: 2rem; bottom: 1rem; z-index: 999;
+    
+    font-size: 3rem;
+    font-weight: 900;
+    color: #444;
+
+    transition: font-size 0.3s ease-in-out;
+}
+.item_desc{
+    position: absolute;
+    right: -30rem; top: 50%; z-index: 2;
+    transform: translateY(-50%);
+
+    height: 30rem; width: 30rem;
+
+    background-color: black;
+    color: white;
+
+    border-radius: 50%;
+
+    transition: right 0.3s ease-in-out;
+
+    cursor: pointer;
+}
+.item_arrow{
+    position: absolute;
+    left: 0rem; top: 50%;
+    transform: translateY(-50%);
+
+    width: 10rem; height: 10rem;
+
+    background-color: black;
+    border-radius: 50%;
+
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+
+    cursor: pointer;
+
+    transition: left 0.3s ease-in-out 0.2s;
+}
+.item_arrow i{
+    position: absolute;
+    left: 35%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+.item_desc_text{
+    position: absolute;
+    left: 5rem; top: 50%;
+    transform: translateY(-50%);
+
+    width: 10rem;
+    font-size: 1.5rem;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.project_item:hover >.item_title{
+    font-size: 4rem;
+}
+.project_item:hover > .item_img{
+    transform: translate(-50%,-50%) scale(1.5, 1);
+}
+.project_item:hover .item_desc{
+    right: -13rem;
+}
+.project_item:hover .item_arrow{
+    left: -3rem;
+}
+
+/*-------------------------------------------footer CSS----------------------------------------*/
+footer{
+    position: relative;
+    top: 10rem;
+}
+.footer_title{
+    margin-left: 1rem;
+    margin-top: 3rem;
+    
+    font-size: 5rem;
+    font-weight: 900;
+    color: #444;
+}
+.footer_content{
+    padding: 3rem;
+    background-color: black;
+    color: white;
+}
+.footer_item{
+    display: grid;
+    width: 50%; min-width: 45rem;
+    grid-template-columns: 1fr 2fr 10fr;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+}
+.footer_icon{
+    color: white;
+}
+.github_achor{
+    color: white;
+}
