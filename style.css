@@ -63,7 +63,7 @@ main{
     position: relative;
     top: 7rem;
     width: 100vw;
-    height: 400vh;
+    height: 500vh;
 
     margin-top: 2rem;
     padding-right: 2rem;
@@ -72,8 +72,9 @@ main{
     box-sizing: border-box;
 }
 .pj_int{
-    min-height: 370vh;
+    min-height: 450vh;
     min-width: 960px;
+    max-width: 2024px;
 
     margin: 0 auto;
     padding: 2rem;
